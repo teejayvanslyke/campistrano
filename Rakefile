@@ -15,13 +15,14 @@ Jeweler::Tasks.new do |gem|
   gem.name = "campistrano"
   gem.homepage = "http://github.com/teejayvanslyke/campistrano"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Campfire deployment notifications for Capistrano}
+  gem.description = %Q{Campfire deployment notifications for Capistrano}
   gem.email = "teejay.vanslyke@gmail.com"
   gem.authors = ["T.J. VanSlyke"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
+  gem.add_runtime_dependency 'capistrano'
+  gem.add_runtime_dependency 'tinder'
   #  gem.add_development_dependency 'rspec', '> 1.2.3'
 end
 Jeweler::RubygemsDotOrgTasks.new
