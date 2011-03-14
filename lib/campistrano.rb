@@ -1,5 +1,8 @@
 module Campistrano
 
+  require 'rubygems'
+  require 'tinder'
+
   def self.config
     @config
   end
@@ -38,3 +41,5 @@ module Campistrano
   end
 
 end
+
+include Campistrano
